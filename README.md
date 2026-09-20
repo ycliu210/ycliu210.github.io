@@ -1,6 +1,6 @@
 # ycliu210.github.io
 
-Personal site and blog, built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/), exported as static HTML and deployed to GitHub Pages with GitHub Actions.
+Eason Liu's personal site and blog, built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/), exported as static HTML and deployed to GitHub Pages with GitHub Actions.
 
 ## Features
 
@@ -12,6 +12,18 @@ Personal site and blog, built with [Next.js](https://nextjs.org/) and [Tailwind 
 - Projects and presentations sections driven by plain JS data files
 - SEO metadata (Open Graph, Twitter cards, canonical URLs) and an auto-generated sitemap
 - Automatic deploy to GitHub Pages on every push to `main`
+
+## TODO — make it yours
+
+The framework is done; the content is placeholder. Work through this list:
+
+- [ ] `config/seo.json` — fill in `author.summary` and `description`; add LinkedIn / Twitter handles if you want them shown
+- [ ] `public/profile.jpg` — add a real photo and point `author.photo` at it in `config/seo.json`
+- [ ] `pages/about.js` — replace the TODO paragraphs with your own bio
+- [ ] `content/projects.js` — list real projects (or set to `[]` to hide the section)
+- [ ] `content/presentations.js` — list real talks (or set to `[]` to hide the section and page)
+- [ ] `content/posts/hello-world/` — delete the sample post and write your first one
+- [ ] GitHub repo **Settings → Pages → Source: GitHub Actions** (one-time, required for deploys)
 
 ## Getting started
 

@@ -12,18 +12,20 @@ export default function About() {
         <h1 className="text-4xl font-black">Hello there! 👋</h1>
       </header>
 
-      {/* Replace the copy below with your own story. */}
+      {/* TODO: Replace the copy below with your own story. */}
       <div className="prose prose-lg max-w-none">
         <p>
-          I&apos;m {author.name}, and this is my corner of the internet. I write about the things I&apos;m building and
-          learning, mostly software and systems.
+          I&apos;m {author.name}. <em>TODO: one or two sentences introducing yourself — what you do and what you care
+          about.</em>
         </p>
         <p>
-          Currently, I&apos;m working on <em>[what you do now]</em>. Before that, I <em>[a sentence or two about your
-          background]</em>.
+          <em>TODO: what you&apos;re working on now.</em>
         </p>
         <p>
-          When I&apos;m not working, you can find me <em>[hobbies, interests]</em>.
+          <em>TODO: a sentence or two about your background — previous roles, education, notable projects.</em>
+        </p>
+        <p>
+          <em>TODO: what you do outside of work — hobbies, interests, where you&apos;re based.</em>
         </p>
         <h2>Get in touch</h2>
         <ul>

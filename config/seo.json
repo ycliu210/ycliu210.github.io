@@ -1,20 +1,20 @@
 {
   "siteMetadata": {
-    "title": "ycliu210",
+    "title": "Eason Liu",
     "author": {
-      "name": "Your Name",
-      "summary": "Engineer · Builder · Writer",
+      "name": "Eason Liu",
+      "summary": "TODO: one-line tagline (e.g. Software Engineer · Open Source · Writer)",
       "photo": "/profile.svg"
     },
-    "description": "Notes on software, systems, and whatever else I'm learning.",
+    "description": "TODO: one or two sentences about what this site is about and what you write on.",
     "siteUrl": "https://ycliu210.github.io",
     "language": "en-US",
     "social": {
       "github": "ycliu210",
       "twitter": "",
       "linkedin": "",
-      "email": ""
+      "email": "ycliu210@gmail.com"
     },
-    "keywords": "ycliu210, software engineering, blog"
+    "keywords": "Eason Liu, ycliu210, software engineering, blog"
   }
 }

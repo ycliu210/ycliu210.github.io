@@ -1,15 +1,16 @@
 // Projects shown on the home page. Remove entries or set this to [] to hide the section.
+// TODO: replace these placeholders with real projects.
 export const projects = [
   {
     role: "Maintainer",
-    name: "Example Project",
+    name: "TODO: Project name",
     url: "https://github.com/ycliu210",
-    description: "A one-sentence description of what this project does and why it matters.",
+    description: "TODO: One sentence on what this project does and why it matters.",
   },
   {
     role: "Contributor",
-    name: "Another Project",
+    name: "TODO: Another project",
     url: "https://github.com/ycliu210",
-    description: "Replace this with something you actually work on.",
+    description: "TODO: One sentence on your contribution or the project's purpose.",
   },
 ];
