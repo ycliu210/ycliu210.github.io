@@ -1,0 +1,20 @@
+{
+  "siteMetadata": {
+    "title": "ycliu210",
+    "author": {
+      "name": "Your Name",
+      "summary": "Engineer · Builder · Writer",
+      "photo": "/profile.svg"
+    },
+    "description": "Notes on software, systems, and whatever else I'm learning.",
+    "siteUrl": "https://ycliu210.github.io",
+    "language": "en-US",
+    "social": {
+      "github": "ycliu210",
+      "twitter": "",
+      "linkedin": "",
+      "email": ""
+    },
+    "keywords": "ycliu210, software engineering, blog"
+  }
+}
