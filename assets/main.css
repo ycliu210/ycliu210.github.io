@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Theme tokens. Light is the default; `.dark` (set by next-themes) swaps them.
+ * Change these six values to re-skin the whole site.
+ */
+@layer base {
+  :root {
+    --paper: #fafafa;
+    --ink: #18202a;
+    --muted: #5b6b7a;
+    --line: #d9e0e7;
+    --accent: #0f6fa8;
+    --accent-soft: #e4f1fa;
+    --code-bg: #f1f4f7;
+  }
+
+  .dark {
+    --paper: #0b0f14;
+    --ink: #eef3f8;
+    --muted: #97a6b5;
+    --line: #223244;
+    --accent: #5ec8ff;
+    --accent-soft: #0e2536;
+    --code-bg: #0f151c;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink antialiased;
+  }
+
+  a {
+    @apply text-accent;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+}
+
+@layer components {
+  .site-container {
+    @apply mx-auto w-full max-w-4xl px-6 py-10 md:px-10 md:py-14;
+  }
+
+  .rule {
+    @apply border-line;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.14em] text-muted;
+  }
+
+  .nav-link {
+    @apply text-base font-semibold text-ink no-underline hover:text-accent;
+  }
+
+  .post-link {
+    @apply text-ink no-underline hover:text-accent;
+  }
+
+  .tag {
+    @apply rounded-full border border-line px-3 py-1 text-xs text-muted;
+  }
+
+  .profile-photo {
+    @apply h-24 w-24 flex-shrink-0 rounded-full object-cover;
+  }
+}
+
+/* Syntax highlighting (rehype-highlight) - a small, theme-aware palette. */
+.hljs { color: var(--ink); background: var(--code-bg); }
+.hljs-comment, .hljs-quote { color: var(--muted); font-style: italic; }
+.hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-section, .hljs-link { color: #c678dd; }
+.dark .hljs-keyword, .dark .hljs-selector-tag, .dark .hljs-literal, .dark .hljs-section, .dark .hljs-link { color: #d3a4ff; }
+.hljs-string, .hljs-title, .hljs-name, .hljs-type, .hljs-attribute, .hljs-symbol, .hljs-bullet, .hljs-addition, .hljs-variable, .hljs-template-tag, .hljs-template-variable { color: #2f8f4e; }
+.dark .hljs-string, .dark .hljs-title, .dark .hljs-name, .dark .hljs-type, .dark .hljs-attribute, .dark .hljs-symbol, .dark .hljs-bullet, .dark .hljs-addition, .dark .hljs-variable, .dark .hljs-template-tag, .dark .hljs-template-variable { color: #98c379; }
+.hljs-number, .hljs-built_in, .hljs-builtin-name, .hljs-meta, .hljs-deletion { color: #b3591c; }
+.dark .hljs-number, .dark .hljs-built_in, .dark .hljs-builtin-name, .dark .hljs-meta, .dark .hljs-deletion { color: #e5a26e; }
+.hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: bold; }
